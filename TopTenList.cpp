@@ -26,7 +26,8 @@ void TopTenList::display_forward(){
   for(int i = 0; i < (int)_list.size(); i++){
     Hyperlink T = get(i);
     string t = T.url;
-    cout<<(i+1)<<". "<<t<<endl;
+    string z = T.text;
+    cout<<(i+1)<<". "<<t<<" "<<z<<endl;
 
   }
 }
@@ -34,6 +35,7 @@ void TopTenList::display_backward(){
   for(int i = 9; i >= 0; i--){
     Hyperlink T = get(i);
     string t = T.url;
-    cout<<(i+1)<<". "<<t<<endl;
+    string z = T.text;
+    cout<<(i+1)<<". "<<t<<" "<<z<<endl;
   }
 }
